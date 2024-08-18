@@ -14,7 +14,7 @@ Ensure you have the following installed:
 
 1. **Clone the Repository:**
 
-   ```bash
+   ```
    git clone https://github.com/zetacoder/webScraper.git
    cd webScraper
    ```
@@ -23,18 +23,22 @@ Ensure you have the following installed:
 
 Create a .env file in the root directory of the project with the following content, replacing your_database_dsn with your PostgreSQL Data Source Name (DSN):
    
-   ```bash
+   ```
    SQL_DSN=your_database_dsn
    ```
-   Example DSN: `postgres://username:password@localhost:5432/mydatabase?sslmode=disable`
+
+   Example DSN: `host=localhost user=postgres password=yourpassword dbname=yourdb port=5432 sslmode=disable`
+
+
 
 3. **Install Go Dependencies:**
 
 Ensure you are in the project directory and run:
 
-    ```bash
-    go mod tidy
-    ```
+```
+go mod tidy
+```
+
 This command will download and install the required Go modules.
 
 
@@ -47,20 +51,22 @@ Ensure you have a PostgreSQL database running. Create a database if you haven’
 
 To run the web scraper, use the following command:
 
-    ```bash
+    ```
     go run main.go
     ```
+    
 This will start the scraper, which performs the following tasks:
 
 1. **Fetches the first 30 entries** from Hacker News.
 2. Applies the **filtering logic**.
 3. **Saves the filtered results** and **usage data** to the PostgreSQL database.
 
+
 ## Testing
 
 To run all the tests of the project, mainly hosted in **./scraper/scraper_test.go** just run in root dir:
 
-    ```bash
+    ```
     go test ./...
     ```
 
@@ -83,10 +89,10 @@ The application includes comprehensive error handling for:
 
 
 ## References
-[Go Documentation](https://go.dev/)
-[Colly Documentation](https://github.com/gocolly/colly)
-[GORM Documentation](https://gorm.io/)
-[PostgreSQL Documentation](https://www.postgresql.org/docs/current/intro-whatis.html)
+* [Go Documentation](https://go.dev/)
+* [Colly Documentation](https://github.com/gocolly/colly)
+* [GORM Documentation](https://gorm.io/)
+* [PostgreSQL Documentation](https://www.postgresql.org/docs/current/intro-whatis.html)
 
 Feel free to open issues or submit pull requests if you encounter problems or have suggestions for improvements.
 
