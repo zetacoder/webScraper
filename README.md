@@ -75,10 +75,10 @@ go test ./...
 
 The application includes comprehensive error handling for:
 
-**Environment Variables**: Ensures the .env file is loaded correctly.
-**Database Initialization**: Handles errors during database connection and table migration.
-**Web Scraping**: Captures and logs errors encountered while scraping data.
-**Data Storage**: Manages errors during data saving to the database.
+* **Environment Variables**: Ensures the .env file is loaded correctly.
+* **Database Initialization**: Handles errors during database connection and table migration.
+* **Web Scraping**: Captures and logs errors encountered while scraping data.
+* **Data Storage**: Manages errors during data saving to the database.
 
 
 ## Additional Notes
