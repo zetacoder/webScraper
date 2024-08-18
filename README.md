@@ -49,11 +49,11 @@ Ensure you have a PostgreSQL database running. Create a database if you haven’
 
 ## Running the Application
 
-To run the web scraper, use the following command:
+To run the web scraper, use the following command (in the root dir):
 
-    ```
-    go run main.go
-    ```
+```
+go run main.go
+```
     
 This will start the scraper, which performs the following tasks:
 
@@ -66,10 +66,10 @@ This will start the scraper, which performs the following tasks:
 
 To run all the tests of the project, mainly hosted in **./scraper/scraper_test.go** just run in root dir:
 
-    ```
-    go test ./...
-    ```
-
+   ```
+go test ./...
+   ```
+   
 
 ## Error Handling
 
