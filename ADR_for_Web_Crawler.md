@@ -76,10 +76,10 @@ We have chosen to implement the solution in Golang using the following stack:
 - Dependence on external libraries may require monitoring for updates or changes.
 - PostgreSQL requires additional setup and management, which may increase deployment complexity.
 
-## Next Steps
-1. Implement automated tests for the scraper and filters.
-2. Review and optimize code for performance and maintainability.
-3. Document and review the implementation with stakeholders to ensure all requirements are met.
+## Next Steps and Considerations
+1. Consider the use of concurrency if the project scales and need to scrape more websites
+2. Optimize for scalability and performance.
+3. Create more in depth models to extract more data from each post.
 
 ## References
 - [Colly Documentation](https://pkg.go.dev/github.com/gocolly/colly/v2)
